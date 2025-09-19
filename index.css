@@ -140,11 +140,11 @@
     }
 
     .btn_banner {
-      background-color:rgb(231, 149, 122);
+      background-color: rgb(231, 149, 122);
       text-decoration: none;
       color: rgb(253, 252, 252);
       padding: 10px;
-      border-radius: 10px; 
+      border-radius: 10px;
       margin-bottom: 40px;
     }
 
@@ -152,9 +152,9 @@
       margin-bottom: 30px;
     }
 
-    .btn_banner:hover{
+    .btn_banner:hover {
       background-color: rgb(240, 126, 84);
-      
+
     }
 
     .banner-text h1,
@@ -314,6 +314,74 @@
       background: #333;
     }
 
+    /*  Estilos Aboutme  */
+    .aboutme {
+      display: flex;
+      background-color: rgb(248, 248, 248);
+      margin-top: -20px;
+    }
+
+    .arrow-right-container {
+      width: 160px;
+      height: 10px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 6em;
+    }
+
+    .arrow-right {
+      width: 120px;
+      height: 60px;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transform: rotate(30deg);
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      animation: slideRight 1s infinite;
+      background-color: chocolate;
+    }
+
+    /* animación de izquierda a derecha */
+    @keyframes slideRight {
+      0% {
+        left: -30px;
+        opacity: 0;
+      }
+
+      50% {
+        left: 30px;
+        opacity: 1;
+      }
+
+      100% {
+        left: 70px;
+        opacity: 0;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* Workshops */
 
 
@@ -385,15 +453,47 @@
       color: white;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*  Estilos Servicios  */
     .content-services {
-      background-color: #f9f9f9;
-      padding: 20px;
-    }
+      background-color: rgb(248, 248, 248);
+      margin-top: -20px;
 
-    .container-services {
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
     .carousel {
@@ -426,7 +526,7 @@
     }
 
     .card h3 {
-     margin-top: 15px;
+      margin-top: 15px;
       font-size: 18px;
       color: #333;
     }
