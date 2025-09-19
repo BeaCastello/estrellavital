@@ -53,12 +53,22 @@ const frases = [
       });
     }
  
-  const faqItems = document.querySelectorAll(".faq-item");
+   const elements = document.querySelectorAll('.about-left, .about-right');
 
-    faqItems.forEach(item => {
-      item.addEventListener("click", () => {
-        item.classList.toggle("active");
-        let sign = item.querySelector("span");
-        sign.textContent = item.classList.contains("active") ? "−" : "+";
-      });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains('about-left')) {
+          entry.target.classList.add('show-left');
+        }
+        if (entry.target.classList.contains('about-right')) {
+          entry.target.classList.add('show-right');
+        }
+      } else {
+        // 🔁 Quita la animación cuando sale de la vista
+        entry.target.classList.remove('show-left', 'show-right');
+      }
     });
+  }, { threshold: 0.2 }); // 20% visible para activar
+
+  elements.forEach(el => observer.observe(el));

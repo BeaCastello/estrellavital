@@ -7,7 +7,6 @@
     body {
       font-family: "Georgia", "Times New Roman", serif;
       background-color: rgb(248, 248, 248);
-      margin-top: -20px;
       color: #222;
       line-height: 1.4;
     }
@@ -24,7 +23,7 @@
     .navbar {
       display: flex;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 30px;
     }
 
     .logo {
@@ -292,14 +291,14 @@
       margin-bottom: 15px;
       color: #333;
       position: relative;
-       z-index: 2;
+      z-index: 2;
     }
 
     .autor {
       font-weight: bold;
       color: #555;
-       position: relative;
-       z-index: 2;
+      position: relative;
+      z-index: 2;
     }
 
     .botones {
@@ -326,8 +325,64 @@
     /*  Estilos Aboutme  */
     .aboutme {
       display: flex;
-      background-color: rgb(248, 248, 248);
-      margin-top: -20px;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+    }
+
+    .text-left {
+      text-align: justify;
+      line-height: 32px;
+      width: 500px;
+      margin-bottom: 15px;
+    }
+
+    .hidden {
+      opacity: 0;
+      transform: translateX(0) scale(0.95);
+      transition: all 0.8s ease;
+    }
+
+
+
+    /* Animaciones */
+    .show-left {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      animation: slideInLeft 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+    .show-right {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      animation: slideInRight 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    }
+
+
+    /* Keyframes */
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-120px) scale(0.9);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(120px) scale(0.9);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+      }
     }
 
     .arrow-right-container {
@@ -335,18 +390,15 @@
       height: 10px;
       overflow: hidden;
       position: relative;
-      margin-top: 6em;
+      
     }
 
     .arrow-right {
       width: 120px;
       height: 60px;
-      border-top: 3px solid #fff;
       border-right: 3px solid #fff;
       transform: rotate(30deg);
       position: absolute;
-      left: -10px;
-      top: 5px;
       animation: slideRight 1s infinite;
       background-color: chocolate;
     }
@@ -372,7 +424,7 @@
     /*  Estilos Servicios  */
     .content-services {
       background-color: rgb(248, 248, 248);
-      margin-top: -20px;
+      margin-top: -10px;
       margin-bottom: 40px;
 
     }
@@ -394,6 +446,7 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
       width: 320px;
+
     }
 
     .card:hover {
@@ -461,32 +514,13 @@
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* Workshops */
 
 
     .container-workshops {
       display: flex;
       flex-wrap: wrap;
+      margin-top: 70px;
 
     }
 
