@@ -306,6 +306,7 @@
       justify-content: center;
       gap: 8px;
       margin-top: 20px;
+       z-index: 2;
     }
 
     .boton {
@@ -316,6 +317,7 @@
       background: transparent;
       cursor: pointer;
       transition: background 0.3s;
+       z-index: 2;
     }
 
     .boton.activo {
