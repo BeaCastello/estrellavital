@@ -52,6 +52,8 @@ const frases = [
         btn.classList.toggle("activo", idx === i);
       });
     }
+
+     // Aboutme
  
    const elements = document.querySelectorAll('.about-left, .about-right');
 
@@ -72,3 +74,16 @@ const frases = [
   }, { threshold: 0.2 }); // 20% visible para activar
 
   elements.forEach(el => observer.observe(el));
+
+
+      //Workshops
+
+   const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("active");
+        let sign = item.querySelector("span");
+        sign.textContent = item.classList.contains("active") ? "−" : "+";
+      });
+    });
