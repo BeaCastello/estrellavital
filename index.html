@@ -133,8 +133,7 @@
             Ofrecemos orientación personalizada y soluciones rápidas para trámites de extranjería, todo a
             través de una asesoría remota eficiente y accesible.
           </div>
-          <h3>Talleres</h3>
-        
+          <h3>Talleres</h3>        
         </div>
 
       </div>
@@ -147,6 +146,8 @@
     <div class="contacto">
       <img src="imagenes/fotoLaura.jpeg" style="width: 390px; border: 10px solid #ebc7bb; margin-left: 4em;">
     </div>
+
+   
 
     <!--Lado derecho -->
     <div class="faq">
@@ -187,9 +188,29 @@
       <br></br>
       <a class="btn_transparent"> <i class="fa-solid fa-clock"></i> Pide cita</a>
     </div>
-
   </div>
 
+ <!-- FORMULARIO OCULTO -->
+    <div id="formCita" style="display: none; margin-top: 20px; border: 1px solid #ebc7bb; padding: 20px; border-radius: 8px;">
+      <h3>Agenda tu cita</h3>
+      <form>
+        <label for="fecha">Elige el día:</label><br>
+        <input type="date" id="fecha" name="fecha" required style="margin-bottom:10px; width:100%; padding:8px;"><br>
+
+        <label for="hora">Elige la hora:</label><br>
+        <input type="time" id="hora" name="hora" required style="margin-bottom:10px; width:100%; padding:8px;"><br>
+
+        <label for="nombre">Tu nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required style="margin-bottom:10px; width:100%; padding:8px;"><br>
+
+        <label for="email">Tu correo:</label><br>
+        <input type="email" id="email" name="email" required style="margin-bottom:10px; width:100%; padding:8px;"><br>
+
+        <button type="submit" style="background:#ebc7bb; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Reservar</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 
 </body>

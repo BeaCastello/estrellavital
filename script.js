@@ -9,6 +9,7 @@ document.addEventListener('click', (e) => {
 
     });
 
+    // Slider
 const frases = [
       {
         texto: "Procuremos más ser padres de nuestro porvenir que hijos de nuestro pasado.",
@@ -53,6 +54,7 @@ const frases = [
       });
     }
 
+
      // Aboutme
  
    const elements = document.querySelectorAll('.about-left, .about-right');
@@ -87,3 +89,9 @@ const frases = [
         sign.textContent = item.classList.contains("active") ? "−" : "+";
       });
     });
+
+    // Formulario oculto Workshops
+  document.getElementById("btnCita").addEventListener("click", function () {
+    const form = document.getElementById("formCita");
+    form.style.display = form.style.display === "none" ? "block" : "none";
+  });
